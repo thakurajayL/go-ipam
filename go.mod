@@ -2,7 +2,7 @@ module github.com/thakurajayL/go-ipam
 
 go 1.18
 
-replace github.com/metal-stack/go-ipam => ./
+replace github.com/metal-stack/go-ipam => github.com/thakurajayL/go-ipam v0.0.1-dev
 
 require (
 	github.com/avast/retry-go/v4 v4.1.0
