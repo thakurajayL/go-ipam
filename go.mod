@@ -2,7 +2,7 @@ module github.com/thakurajayL/go-ipam
 
 go 1.18
 
-replace github.com/metal-stack/go-ipam => github.com/thakurajayL/go-ipam
+replace github.com/metal-stack/go-ipam => ./
 
 require (
 	github.com/avast/retry-go/v4 v4.1.0
@@ -13,6 +13,7 @@ require (
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/klauspost/connect-compress v0.1.1
 	github.com/lib/pq v1.10.6
+	github.com/metal-stack/go-ipam v0.0.0-00010101000000-000000000000
 	github.com/metal-stack/v v1.0.3
 	github.com/stretchr/testify v1.8.0
 	github.com/testcontainers/testcontainers-go v0.13.0
