@@ -2,6 +2,8 @@ module github.com/thakurajayL/go-ipam
 
 go 1.18
 
+replace github.com/metal-stack/go-ipam => github.com/thakurajayL/go-ipam
+
 require (
 	github.com/avast/retry-go/v4 v4.1.0
 	github.com/bufbuild/connect-go v0.2.0
