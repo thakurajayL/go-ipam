@@ -1,27 +1,30 @@
-module github.com/metal-stack/go-ipam
+module github.com/thakurajayL/go-ipam
 
 go 1.18
 
+replace github.com/metal-stack/go-ipam => ./
+
 require (
 	github.com/avast/retry-go/v4 v4.1.0
-	github.com/bufbuild/connect-go v0.2.0
+	github.com/bufbuild/connect-go v0.4.0
 	github.com/bufbuild/connect-grpchealth-go v0.1.0
 	github.com/bufbuild/connect-grpcreflect-go v0.1.0
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/klauspost/connect-compress v0.1.1
 	github.com/lib/pq v1.10.6
+	github.com/metal-stack/go-ipam v1.11.1
 	github.com/metal-stack/v v1.0.3
 	github.com/stretchr/testify v1.8.0
 	github.com/testcontainers/testcontainers-go v0.13.0
-	github.com/urfave/cli/v2 v2.11.1
+	github.com/urfave/cli/v2 v2.11.2
 	go.etcd.io/etcd/client/v3 v3.5.4
-	go.mongodb.org/mongo-driver v1.10.0
-	go.uber.org/zap v1.21.0
-	golang.org/x/net v0.0.0-20220728211354-c7608f3a8462
-	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4
+	go.mongodb.org/mongo-driver v1.10.1
+	go.uber.org/zap v1.23.0
+	golang.org/x/net v0.0.0-20220826154423-83b083e8dc8b
+	golang.org/x/sync v0.0.0-20220819030929-7fc1605a5dde
 	google.golang.org/protobuf v1.28.1
-	inet.af/netaddr v0.0.0-20220617031823-097006376321
+	inet.af/netaddr v0.0.0-20220811202034-502d2d690317
 )
 
 require (

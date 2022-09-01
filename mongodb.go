@@ -69,7 +69,8 @@ func (m *mongodb) CreatePrefix(ctx context.Context, prefix Prefix) (Prefix, erro
 
 	// ErrNoDocuments should be returned if the prefix does not exist
 	if r.Err() == nil {
-		return Prefix{}, fmt.Errorf("prefix already exists:%s", prefix.Cidr)
+		fmt.Printf("prefix already exists:%s", prefix.Cidr)
+		return prefix, nil
 	} else if r.Err() != nil && !errors.Is(r.Err(), mongo.ErrNoDocuments) { // unrelated to ErrNoDocuments.
 		return Prefix{}, fmt.Errorf("unable to insert prefix:%s, error:%w", prefix.Cidr, r.Err())
 	} // ErrNoDocuments should pass through this block
