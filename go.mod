@@ -1,4 +1,4 @@
-module github.com/metal-stack/go-ipam
+module github.com/thakurajayL/go-ipam
 
 go 1.21
 
@@ -13,6 +13,7 @@ require (
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/klauspost/connect-compress/v2 v2.0.0
 	github.com/lib/pq v1.10.9
+	github.com/metal-stack/go-ipam v0.0.0-00010101000000-000000000000
 	github.com/metal-stack/v v1.0.3
 	github.com/prometheus/client_golang v1.17.0
 	github.com/redis/go-redis/v9 v9.3.0
@@ -93,7 +94,6 @@ require (
 	go.opentelemetry.io/otel/metric v1.20.0 // indirect
 	go.opentelemetry.io/otel/sdk v1.20.0 // indirect
 	go.opentelemetry.io/otel/trace v1.20.0 // indirect
-	go.uber.org/goleak v1.3.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.26.0 // indirect
 	golang.org/x/crypto v0.15.0 // indirect
