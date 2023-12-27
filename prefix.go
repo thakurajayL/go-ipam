@@ -124,20 +124,21 @@ func (i *ipamer) NewPrefix(ctx context.Context, cidr string) (*Prefix, error) {
 	i.mu.Lock()
 	defer i.mu.Unlock()
 	namespace := namespaceFromContext(ctx)
-	existingPrefixes, err := i.storage.ReadAllPrefixCidrs(ctx, namespace)
-	if err != nil {
-		return nil, err
-	}
+	//existingPrefixes, err := i.storage.ReadAllPrefixCidrs(ctx, namespace)
+	//if err != nil {
+	//	return nil, err
+	//}
 	p, err := i.newPrefix(cidr, "")
 	if err != nil {
 		return nil, err
 	}
-	err = PrefixesOverlapping(existingPrefixes, []string{p.Cidr})
-	if err != nil {
-		return nil, err
-	}
+	//err = PrefixesOverlapping(existingPrefixes, []string{p.Cidr})
+	//if err != nil {
+	//	return nil, err
+	//}
 	newPrefix, err := i.storage.CreatePrefix(ctx, *p, namespace)
 	if err != nil {
+		fmt.Println("Prefix already created in Database ")
 		return nil, err
 	}
 

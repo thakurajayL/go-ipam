@@ -2,6 +2,8 @@ module github.com/metal-stack/go-ipam
 
 go 1.21
 
+replace github.com/metal-stack/go-ipam => ./
+
 require (
 	connectrpc.com/connect v1.12.0
 	connectrpc.com/grpchealth v1.3.0
